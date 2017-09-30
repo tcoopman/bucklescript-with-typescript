@@ -9,6 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/node": "^8.0.31",
+    "bs-loader": "^1.8.0",
+    "bs-platform": "^1.9.3",
     "source-map-loader": "^0.2.2",
     "ts-loader": "^2.3.7",
     "typescript": "^2.5.3",

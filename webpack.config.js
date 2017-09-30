@@ -14,7 +14,7 @@ module.exports = {
         publicPath: '/dist/',
     },
     resolve: {
-        extensions: ['.js', '.ts'],
+        extensions: ['.js', '.ts', '.ml', '.re'],
     },
     module: {
         rules: [
@@ -29,6 +29,15 @@ module.exports = {
                 test: /\.tsx?$/,
                 loaders: ['ts-loader'],
                 exclude: /node_modules/
+            },
+            {
+                test: /\.(re|ml)$/,
+                use: {
+                    loader: 'bs-loader',
+                    options: {
+                        module: 'es6',
+                    }
+                }
             },
         ]
     }

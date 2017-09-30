@@ -1,0 +1,9 @@
+{
+  "name": "typescript-with-bucklescript",
+  "version": "0.1.0",
+  "sources": [
+    "src"
+  ],
+  "package-specs": ["es6"],
+  "bsc-flags": [ "-bs-super-errors -no-alias-deps", "-color", "always"]
+}
