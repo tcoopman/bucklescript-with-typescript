@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "clean": "bsb -clean",
+    "build": "webpack",
     "start": "webpack-dev-server --inline --hot"
   },
   "author": "",
